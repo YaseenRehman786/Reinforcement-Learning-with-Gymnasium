@@ -1,0 +1,65 @@
+Option A (Recommended): Create repo on GitHub first → Clone locally → Add files → Push
+
+Create a repository on GitHub (example name: rl-gymnasium-practice)
+
+Clone the repo onto your computer:
+
+cd Desktop
+git clone https://github.com/YOUR_USERNAME/rl-gymnasium-practice.git
+
+
+Enter the repo folder:
+
+cd rl-gymnasium-practice
+
+
+Add your files into this folder (drag/drop or create new files)
+
+Example structure (optional):
+
+mkdir src
+mkdir notebooks
+echo print("Hello RL") > src/main.py
+
+
+Stage, commit, and push:
+
+git add .
+git commit -m "Added initial RL practice files"
+git push
+
+
+__________________________________________________________________________________________________________________
+
+Option B: You already have a folder with code → Connect it to GitHub repo → Push
+
+Go into your existing project folder:
+
+cd Desktop/rl-gymnasium-practice
+
+
+Initialize git:
+
+git init
+
+
+Connect the folder to your GitHub repo:
+
+git remote add origin https://github.com/YOUR_USERNAME/rl-gymnasium-practice.git
+
+
+Stage and commit:
+
+git add .
+git commit -m "Initial commit"
+
+
+Push to GitHub:
+
+git branch -M main
+git push -u origin main
+
+Normal workflow after setup (every time you make changes)
+git add .
+git commit -m "Describe what you changed"
+git push
